@@ -1,12 +1,12 @@
-apiversion: v1
+apiVersion: v1
 kind: Pod 
 metadata:
-	name: client-pod
-	labels:
-		components: web
+  name: client-pod
+  labels:
+    component: web
 spec:
   containers:
     - name: client
       image: stephengrider/multi-client
       ports:
-        - conatinerPort : 3000
+        - containerPort : 3000
